@@ -387,17 +387,12 @@ Oracle AI
 
 # 👩🏻 Author
 
-### Isela López García
+### IselaDataMaven
 
-AI Engineer
 
-Cybersecurity
+LinkedIn : https://www.linkedin.com/in/iselalgarcia/?skipRedirect=true
 
-Oracle Next Education
-
-LinkedIn
-
-GitHub
+GitHub : https://github.com/IselaDataMaven
 
 ---
 
