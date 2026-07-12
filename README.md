@@ -58,7 +58,7 @@ Designed following enterprise architecture principles inspired by:
 
 # 🎬 Demo
 
-> (Replace with your GIF)
+
 
 <p align="center">
 
