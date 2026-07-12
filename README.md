@@ -120,7 +120,7 @@ Designed following enterprise architecture principles inspired by:
 
 # 🏗 Architecture
 
-<img src="docs/images/architecture.png">
+<img src="docs/images/architecture.png"/>
 
 ---
 
