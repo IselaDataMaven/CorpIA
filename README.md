@@ -384,6 +384,24 @@ Azure OpenAI
 Oracle AI
 
 ---
+# ☁️ Deployment
+
+## Oracle Cloud Infrastructure
+
+CorpIA is designed for deployment on Oracle Cloud Infrastructure.
+
+Architecture:
+
+- OCI Compute
+- Docker Containers
+- Oracle Container Registry
+- OCI Object Storage
+- OCI Vault
+
+Deployment documentation:
+
+docs/DEPLOY_ORACLE_CLOUD.md
+---
 
 # 👩🏻 Author
 
