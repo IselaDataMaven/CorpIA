@@ -1,0 +1,61 @@
+{
+  "app": {
+    "name": "CorpIA",
+    "tagline": "Enterprise AI Knowledge Assistant"
+  },
+  "login": {
+    "welcomeTitle": "Welcome back",
+    "welcomeSubtitle": "Sign in to query your company's knowledge",
+    "username": "Username",
+    "usernamePlaceholder": "first.last",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "demoUsersTitle": "Demo users",
+    "errorInvalid": "Incorrect username or password"
+  },
+  "roles": {
+    "admin": "Administrator",
+    "hr": "Human Resources",
+    "marketing": "Marketing",
+    "it": "IT",
+    "finance": "Finance"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "chat": "AI Chat",
+    "knowledgeBase": "Knowledge Base",
+    "documents": "Documents",
+    "models": "AI Models",
+    "users": "Users",
+    "apiKeys": "API Keys",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "header": {
+    "searchPlaceholder": "Search CorpIA...",
+    "notifications": "Notifications"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of CorpIA activity",
+    "usersCard": "Users",
+    "queriesCard": "Queries",
+    "documentsCard": "Documents",
+    "modelCard": "Active AI Model",
+    "recentActivity": "Recent Activity",
+    "weeklyChart": "Queries this week",
+    "serverStatus": "Server Status",
+    "oracleStatus": "Oracle Status",
+    "indexedDocs": "Indexed Documents",
+    "lastQuestions": "Latest Questions",
+    "online": "Online",
+    "operational": "Operational"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "version": "Version"
+  }
+}

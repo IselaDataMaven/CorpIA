@@ -1,0 +1,9 @@
+.venv
+__pycache__
+*.pyc
+data/corpia.db
+data/chroma/*
+!data/chroma/.gitkeep
+data/uploads/*
+!data/uploads/.gitkeep
+.env

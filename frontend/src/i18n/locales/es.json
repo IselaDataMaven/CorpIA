@@ -1,0 +1,61 @@
+{
+  "app": {
+    "name": "CorpIA",
+    "tagline": "Asistente de Conocimiento Empresarial con IA"
+  },
+  "login": {
+    "welcomeTitle": "Bienvenido de nuevo",
+    "welcomeSubtitle": "Inicia sesión para consultar el conocimiento de tu empresa",
+    "username": "Usuario",
+    "usernamePlaceholder": "nombre.apellido",
+    "password": "Contraseña",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "rememberMe": "Recordarme",
+    "signIn": "Entrar",
+    "signingIn": "Entrando...",
+    "demoUsersTitle": "Usuarios de demostración",
+    "errorInvalid": "Usuario o contraseña incorrectos"
+  },
+  "roles": {
+    "admin": "Administrador",
+    "hr": "Recursos Humanos",
+    "marketing": "Marketing",
+    "it": "TI",
+    "finance": "Finanzas"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "chat": "Chat IA",
+    "knowledgeBase": "Base de conocimiento",
+    "documents": "Documentos",
+    "models": "Modelos IA",
+    "users": "Usuarios",
+    "apiKeys": "API Keys",
+    "settings": "Configuración",
+    "logout": "Cerrar sesión"
+  },
+  "header": {
+    "searchPlaceholder": "Buscar en CorpIA...",
+    "notifications": "Notificaciones"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Resumen general de la actividad de CorpIA",
+    "usersCard": "Usuarios",
+    "queriesCard": "Consultas",
+    "documentsCard": "Documentos",
+    "modelCard": "Modelo IA activo",
+    "recentActivity": "Actividad reciente",
+    "weeklyChart": "Consultas de la semana",
+    "serverStatus": "Estado del servidor",
+    "oracleStatus": "Estado de Oracle",
+    "indexedDocs": "Documentos indexados",
+    "lastQuestions": "Últimas preguntas",
+    "online": "En línea",
+    "operational": "Operativo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "version": "Versión"
+  }
+}

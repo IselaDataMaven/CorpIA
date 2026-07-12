@@ -1,0 +1,18 @@
+[
+  {
+    "pregunta":"¿Qué dice Home Office?",
+    "esperado":"Home Office"
+  },
+  {
+    "pregunta":"¿Cómo funciona Nómina?",
+    "esperado":"Nómina"
+  },
+  {
+    "pregunta":"¿Qué es MFA?",
+    "esperado":"MFA"
+  },
+  {
+    "pregunta":"¿Cómo solicitar vacaciones?",
+    "esperado":"vacaciones"
+  }
+]

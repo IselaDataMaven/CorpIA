@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+/* Tailwind v4 usa un motor CSS-first: el "darkMode: 'class'" de
+   tailwind.config.js por sí solo NO activa el variant dark: en clases
+   utilitarias. Hay que declararlo explícitamente aquí para que
+   `dark:bg-...` etc. respondan a la clase .dark en <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colores de marca CorpIA */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-secondary: #0f172a;
+
+  --color-bg-light: #f8fafc;
+  --color-bg-dark: #020617;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #0f172a;
+
+  --color-border: #cbd5e1;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-dark: #f8fafc;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Tipografía */
+  --font-sans: "Inter", "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Radios */
+  --radius-input: 16px;
+  --radius-card: 20px;
+  --radius-button: 16px;
+  --radius-modal: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Scrollbar discreta, coherente con la identidad Enterprise */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 8px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #1e293b;
+}
+
+/* Foco de teclado visible en toda la app (accesibilidad) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Contenido Markdown renderizado en el Chat */
+.prose-corpia p {
+  margin: 0 0 0.65em 0;
+}
+.prose-corpia p:last-child {
+  margin-bottom: 0;
+}
+.prose-corpia ul,
+.prose-corpia ol {
+  margin: 0.4em 0 0.65em 1.25em;
+}
+.prose-corpia ul {
+  list-style: disc;
+}
+.prose-corpia ol {
+  list-style: decimal;
+}
+.prose-corpia h1,
+.prose-corpia h2,
+.prose-corpia h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0.75em 0 0.4em 0;
+}
+.prose-corpia h1 {
+  font-size: 1.25em;
+}
+.prose-corpia h2 {
+  font-size: 1.15em;
+}
+.prose-corpia h3 {
+  font-size: 1.05em;
+}
+.prose-corpia code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: rgba(37, 99, 235, 0.1);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+}
+.prose-corpia pre {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--color-secondary);
+  color: var(--color-text-dark);
+  padding: 14px 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 0.5em 0;
+}
+.prose-corpia pre code {
+  background: transparent;
+  padding: 0;
+}
+.prose-corpia table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5em 0;
+  font-size: 0.9em;
+}
+.prose-corpia th,
+.prose-corpia td {
+  border: 1px solid var(--color-border);
+  padding: 6px 10px;
+  text-align: left;
+}
+.prose-corpia a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.prose-corpia blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 12px;
+  color: var(--color-text-secondary);
+  margin: 0.5em 0;
+}

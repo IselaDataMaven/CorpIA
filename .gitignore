@@ -1,0 +1,90 @@
+# ==========================
+# Backend
+# ==========================
+backend/.venv/
+backend/.venv_test/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+backend/data/corpia.db
+backend/data/chroma/*
+!backend/data/chroma/.gitkeep
+
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+
+backend/.env
+
+# ==========================
+# Frontend
+# ==========================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+
+# ==========================
+# QA
+# ==========================
+qa/screenshots/
+qa/reports/
+qa/__pycache__/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# Python
+# ==========================
+venv/
+__pycache__/
+*.pyc
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# Sistema
+# ==========================
+.DS_Store
+Thumbs.db
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Docker
+*.tar
+
+# Environment
+.env
+.env.*
+
+# QA
+.pytest_cache/
+coverage/
+htmlcov/

@@ -1,0 +1,24 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10  # driver de PostgreSQL; SQLite se usa por defecto vía DATABASE_URL
+pydantic==2.10.3
+pydantic-settings==2.6.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.19
+python-dotenv==1.0.1
+
+# RAG
+chromadb==0.5.23
+scikit-learn==1.5.2
+numpy==1.26.4
+
+# Loaders de documentos
+pypdf==5.1.0
+python-docx==1.1.2
+python-pptx==1.0.2
+openpyxl==3.1.5
+beautifulsoup4==4.12.3
+markdown==3.7

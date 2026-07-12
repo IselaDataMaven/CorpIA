@@ -1,0 +1,66 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: corpia-backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      # DATABASE_URL por defecto usa SQLite en el volumen persistente.
+      # Para migrar a PostgreSQL, descomenta el servicio "postgres" abajo y
+      # cambia esta variable (o la del .env) a algo como:
+      # postgresql+psycopg2://corpia:corpia@postgres:5432/corpia
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///./data/corpia.db}
+    volumes:
+      - corpia_data:/app/data
+    ports:
+      - "8000:8000"
+    networks:
+      - corpia_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: corpia-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:80"
+    networks:
+      - corpia_network
+
+  # --- Opcional: PostgreSQL para producción a mayor escala ---
+  # Descomenta este servicio y ajusta DATABASE_URL en backend/.env para
+  # migrar de SQLite (por defecto) a PostgreSQL sin cambiar código, ya que
+  # SQLAlchemy abstrae el motor de base de datos.
+  # postgres:
+  #   image: postgres:16-alpine
+  #   container_name: corpia-postgres
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_DB: corpia
+  #     POSTGRES_USER: corpia
+  #     POSTGRES_PASSWORD: change-me-in-production
+  #   volumes:
+  #     - corpia_postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - corpia_network
+
+networks:
+  corpia_network:
+    driver: bridge
+
+volumes:
+  corpia_data:
+  # corpia_postgres_data:
