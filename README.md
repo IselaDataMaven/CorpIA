@@ -6,7 +6,7 @@
 
 <h1 align="center">
 
-<img src="docs/images/logocorpia.png" width=80%/> CorpIA
+<img src="docs/images/logocorpia.png" width=80%/> 
 
 ### Enterprise AI Knowledge Assistant
 
