@@ -89,7 +89,7 @@ El GIF muestra el flujo principal de la plataforma:
 
 <!-- Documentos -->
 <p align="center">
-  <img src="./docs/images/documentos.png" alt="Documentos CorpIA" width="90%">
+  <img src="./docs/images/documents.png" alt="Documentos CorpIA" width="90%">
 </p>
 
 ---
