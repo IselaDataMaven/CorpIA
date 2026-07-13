@@ -125,3 +125,4 @@ CorpIA representa la unión entre tecnología, automatización e inteligencia ar
 <p align="center">
   <img src="./logocorpia.png" alt="CorpIA Logo" width="120">
 </p>
+
