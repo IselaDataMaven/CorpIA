@@ -1,202 +1,110 @@
-<p align="center">
+<div align="center">
 
-<img src="docs/images/banner.png" width="100%"/>
-
-</p>
-
-<h1 align="center">
-
-<img src="docs/images/logocorpia.png" width=80%/> 
+# 🚀 CorpIA
 
 ### Enterprise AI Knowledge Assistant
 
-FastAPI • React • RAG • Oracle Cloud Infrastructure
+**An enterprise-grade AI platform built with FastAPI, Docker and Retrieval-Augmented Generation (RAG).**
 
-</h1>
+<p>
 
-<p align="center">
-
-<img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python">
-
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi">
-
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react">
-
-<img src="https://img.shields.io/badge/Vite-purple?style=for-the-badge&logo=vite">
-
-<img src="https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwindcss">
-
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker">
-
-<img src="https://img.shields.io/badge/Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle">
-
-<img src="https://img.shields.io/github/license/IselaDataMaven/CorpIA?style=for-the-badge">
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite)
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge)
+![Swagger](https://img.shields.io/badge/OpenAPI-Swagger-85EA2D?style=for-the-badge&logo=swagger)
 
 </p>
 
 ---
 
-# 🚀 Overview
+### 🌐 Live API
 
-CorpIA is an **Enterprise AI Knowledge Assistant**
-capable of answering organizational questions through
-Retrieval-Augmented Generation (RAG).
+**Production**
 
-Instead of hallucinating answers,
-CorpIA searches your organization's documentation,
-retrieves the most relevant information,
-and generates grounded responses using Large Language Models.
+https://corpia.onrender.com
 
-Designed following enterprise architecture principles inspired by:
+### 📖 Swagger Documentation
 
-- Microsoft Copilot
-- Notion AI
-- Oracle AI
-- Azure OpenAI
+https://corpia.onrender.com/docs
+
+### ❤️ Health Check
+
+https://corpia.onrender.com/health
+
+</div>
 
 ---
 
-# 🎬 Demo
+# 📖 Overview
 
+CorpIA is an enterprise-ready AI backend designed to centralize document management, Retrieval-Augmented Generation (RAG), AI model administration, authentication, and knowledge search through a modern REST API.
 
-
-<p align="center">
-
-<img src="docs/demo/demo.gif">
-
-</p>
+It was built following production-oriented practices including Docker containerization, automatic deployment, JWT authentication, modular architecture and interactive API documentation.
 
 ---
 
 # ✨ Features
 
-✅ Enterprise Authentication
-
-✅ Role Based Access
-
-✅ Document Upload
-
-✅ Automatic Knowledge Base
-
-✅ Semantic Search
-
-✅ Retrieval Augmented Generation
-
-✅ AI Chat
-
-✅ Dark / Light Mode
-
-✅ Docker Support
-
-✅ Oracle Cloud Ready
-
----
-
-# 📸 Screenshots
-
-## Login
-
-<img src="docs/images/login.png">
-
----
-
-## Dashboard
-
-<img src="docs/images/dashboard.png">
-
----
-
-## AI Chat
-
-<img src="docs/images/chat.png">
-
----
-
-## Documents
-
-<img src="docs/images/documents.png">
+- 🔐 JWT Authentication
+- 🤖 AI Model Management
+- 📄 Intelligent Document Upload
+- 📚 Retrieval-Augmented Generation (RAG)
+- 💬 AI Chat API
+- 👥 User Administration
+- ⚙️ System Configuration
+- 📊 Dashboard Metrics
+- 📁 File Management
+- 📖 Automatic Swagger Documentation
+- 🐳 Docker Ready
+- ☁️ Cloud Deployment
 
 ---
 
 # 🏗 Architecture
 
-<img src="docs/images/architecture.png"/>
-
----
-
-## Frontend
-
-React 19
-
-Vite
-
-TailwindCSS
-
-React Router
-
-Axios
-
-Context API
-
----
-
-## Backend
-
-FastAPI
-
-Python
-
-SQLAlchemy
-
-SQLite
-
-JWT
-
-Pydantic
-
----
-
-## Artificial Intelligence
-
-Retrieval Augmented Generation
-
-Document Loader
-
-Chunking
-
-Embeddings
-
-Vector Store
-
-Retriever
-
-Prompt Engineering
-
-LLM Integration
+```text
+                   ┌──────────────────────┐
+                   │      Frontend        │
+                   │ React / Vue / Next   │
+                   └──────────┬───────────┘
+                              │ REST API
+                              ▼
+                   ┌──────────────────────┐
+                   │      FastAPI         │
+                   │       CorpIA         │
+                   └──────────┬───────────┘
+                              │
+        ┌─────────────────────┼────────────────────┐
+        ▼                     ▼                    ▼
+ Authentication          Document RAG         AI Models
+        │                     │                    │
+        └───────────────Database───────────────────┘
+```
 
 ---
 
 # 📂 Project Structure
 
 ```text
-CorpIA
-│
+CorpIA/
+
 ├── backend
-│
 │   ├── app
-│   ├── api
-│   ├── rag
-│   ├── db
-│   ├── services
-│   └── schemas
+│   │   ├── api
+│   │   ├── core
+│   │   ├── db
+│   │   ├── rag
+│   │   ├── schemas
+│   │   └── services
+│   │
+│   ├── data
+│   ├── Dockerfile
+│   ├── main.py
+│   └── requirements.txt
 │
 ├── frontend
-│
-│   ├── components
-│   ├── pages
-│   ├── context
-│   ├── layouts
-│   └── api
 │
 ├── docs
 │
@@ -207,219 +115,166 @@ CorpIA
 
 ---
 
-# 🧠 RAG Pipeline
+# 🚀 API Modules
 
+| Module | Description |
+|---------|-------------|
+| Authentication | JWT Login & Security |
+| Chat | AI Conversations |
+| Documents | Upload, Preview & Delete |
+| Models | AI Model Administration |
+| Users | User Management |
+| Dashboard | Metrics |
+| Settings | Configuration |
+| System | Server Information |
+
+---
+
+# 🧠 Technologies
+
+| Backend | DevOps | AI |
+|----------|---------|----|
+| Python | Docker | RAG |
+| FastAPI | Render | LLM Ready |
+| SQLAlchemy | GitHub | Embeddings |
+| Pydantic | Swagger | Vector Search |
+| SQLite | Docker Compose | ChromaDB |
+
+---
+
+# 🔌 REST Endpoints
+
+| Method | Endpoint |
+|----------|-----------|
+| GET | / |
+| GET | /health |
+| POST | /api/auth/login |
+| POST | /api/chat |
+| POST | /api/documents/upload |
+| GET | /api/models |
+| GET | /api/users |
+| GET | /api/dashboard |
+
+See the complete documentation in Swagger:
+
+https://corpia.onrender.com/docs
+
+---
+
+# 🐳 Docker
+
+Build
+
+```bash
+docker build -t corpia .
 ```
-PDF
 
-↓
+Run
 
-Loader
-
-↓
-
-Chunking
-
-↓
-
-Embeddings
-
-↓
-
-Vector Database
-
-↓
-
-Retriever
-
-↓
-
-Prompt
-
-↓
-
-LLM
-
-↓
-
-Answer
+```bash
+docker run -p 8000:8000 corpia
 ```
 
 ---
 
-# ⚡ Installation
+# ⚙ Local Installation
 
-## Backend
+Clone repository
 
 ```bash
-cd backend
+git clone https://github.com/IselaDataMaven/CorpIA.git
+```
 
-python -m venv venv
+Enter project
 
-source venv/bin/activate
+```bash
+cd CorpIA/backend
+```
 
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+Run
+
+```bash
 uvicorn main:app --reload
 ```
 
----
+Open
 
-## Frontend
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
+```
+http://localhost:8000/docs
 ```
 
 ---
 
-## Docker
+# ☁ Deployment
 
-```bash
-docker compose up --build
+The backend is containerized with Docker and automatically deployed using Render.
+
+Production URL
+
+```
+https://corpia.onrender.com
 ```
 
 ---
 
-# 🌎 Oracle Cloud Deployment
+# 📸 Screenshots
 
-The production architecture uses Oracle Cloud Infrastructure.
+## Swagger UI
 
-Components:
+> Add a screenshot of the deployed API documentation.
 
-✅ Oracle Compute
+## Dashboard
 
-✅ Oracle Object Storage
-
-✅ OCI Vault
-
-✅ Oracle Container Registry
-
-✅ Docker
-
-✅ NGINX
-
-Deployment Guide:
-
-```
-docs/DEPLOY_ORACLE_CLOUD.md
-```
+> Add future frontend screenshots.
 
 ---
 
-# 🔒 Security
+# 🔮 Roadmap
 
-JWT Authentication
-
-Password Hashing
-
-Protected Routes
-
-Role Based Access
-
-Environment Variables
-
-OCI Vault Ready
-
----
-
-# 🧪 Testing
-
-```bash
-pytest
-```
-
----
-
-# 👨‍💻 Technologies
-
-| Backend | Frontend | AI | Cloud |
-|----------|----------|------|------|
-| FastAPI | React | RAG | Oracle Cloud |
-| SQLAlchemy | Tailwind | Embeddings | OCI |
-| JWT | Vite | LLM | Docker |
-
----
-
-# 🚀 Roadmap
-
-- [x] Authentication
-
-- [x] Dashboard
-
-- [x] AI Chat
-
-- [x] Knowledge Base
-
+- [x] FastAPI Backend
 - [x] Docker
-
-- [ ] Oracle Deployment
-
-- [ ] CI/CD
-
+- [x] JWT Authentication
+- [x] Document Management
+- [x] RAG Integration
+- [x] Swagger Documentation
+- [x] Cloud Deployment
+- [ ] React Frontend
+- [ ] PostgreSQL
+- [ ] Redis Cache
 - [ ] Kubernetes
+- [ ] CI/CD Pipeline
+- [ ] Multi-model AI Support
 
 ---
 
-# 📈 Future Improvements
+# 🤝 Contributing
 
-Vector Search
+Contributions, issues and feature requests are welcome.
 
-Streaming Responses
-
-Multi Language
-
-Voice Assistant
-
-Multi Tenant
-
-Analytics Dashboard
-
-Azure OpenAI
-
-Oracle AI
-
----
-# ☁️ Deployment
-
-## Oracle Cloud Infrastructure
-
-CorpIA is designed for deployment on Oracle Cloud Infrastructure.
-
-Architecture:
-
-- OCI Compute
-- Docker Containers
-- Oracle Container Registry
-- OCI Object Storage
-- OCI Vault
-
-Deployment documentation:
-
-docs/DEPLOY_ORACLE_CLOUD.md
----
-
-# 👩🏻 Author
-
-### IselaDataMaven
-
-
-LinkedIn : https://www.linkedin.com/in/iselalgarcia/?skipRedirect=true
-
-GitHub : https://github.com/IselaDataMaven
+Feel free to fork this project and submit a Pull Request.
 
 ---
 
-# ⭐ Support
+# 👩‍💻 Author
 
-If you like this project please leave a ⭐
+**IselaDataMaven**
 
-It motivates future development.
+GitHub
+
+https://github.com/IselaDataMaven
 
 ---
 
-MIT License
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a Star.
+
+Built with ❤️ using FastAPI, Docker and Artificial Intelligence.
+
+</div>
