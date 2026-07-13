@@ -79,7 +79,7 @@ El GIF muestra el flujo principal de la plataforma:
 
 <!-- Panel -->
 <p align="center">
-  <img src="./docs/images/panel de control.png" alt="Panel de Control CorpIA" width="90%">
+  <img src="./docs/images/dashboard.png" alt="Panel de Control CorpIA" width="90%">
 </p>
 
 
