@@ -133,7 +133,9 @@ El GIF muestra el flujo principal de la plataforma:
 
 CorpIA representa la unión entre tecnología, automatización e inteligencia artificial para crear herramientas capaces de ayudar a las organizaciones a tomar mejores decisiones.
 
+<!-- Logo -->
 <p align="center">
-  <img src="./logocorpia.png" alt="CorpIA Logo" width="120">
+  <img src="./docs/images/logocorpia.png" alt="Logo CorpIA" width="180">
 </p>
+
 
