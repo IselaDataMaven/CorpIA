@@ -1,15 +1,18 @@
 # 🚀 CorpIA — Plataforma Inteligente de Gestión Documental con IA
 
+<!-- Banner -->
 <p align="center">
-  <img src="./banner.png" alt="Banner CorpIA" width="100%">
+  <img src="./docs/images/banner.png" alt="Banner CorpIA" width="100%">
 </p>
+
 
 <p align="center">
   <strong>CorpIA</strong> es una plataforma inteligente impulsada por IA diseñada para facilitar la gestión, análisis y consulta de información empresarial mediante una API moderna y una interfaz intuitiva.
 </p>
 
+<!-- Logo -->
 <p align="center">
-  <img src="./logocorpia.png" alt="Logo CorpIA" width="180">
+  <img src="./docs/images/logocorpia.png" alt="Logo CorpIA" width="180">
 </p>
 
 ---
@@ -28,8 +31,9 @@ CorpIA cuenta con una identidad visual enfocada en:
 
 # 🏗️ Arquitectura del Sistema
 
+<!-- Arquitectura -->
 <p align="center">
-  <img src="./arquitectura.png" alt="Arquitectura CorpIA" width="100%">
+  <img src="./docs/images/arquitectura.png" alt="Arquitectura CorpIA" width="100%">
 </p>
 
 La arquitectura de CorpIA está diseñada bajo una estructura modular:
@@ -44,8 +48,9 @@ La arquitectura de CorpIA está diseñada bajo una estructura modular:
 
 # 🎬 Demo del funcionamiento
 
+<!-- Demo GIF -->
 <p align="center">
-  <img src="./demo.gif" alt="Demo CorpIA" width="100%">
+  <img src="./docs/images/demo.gif" alt="Demo CorpIA" width="100%">
 </p>
 
 El GIF muestra el flujo principal de la plataforma:
@@ -62,32 +67,38 @@ El GIF muestra el flujo principal de la plataforma:
 
 ## 🔐 Login
 
+
+<!-- Login -->
 <p align="center">
-  <img src="./login.png" alt="Login CorpIA" width="90%">
+  <img src="./docs/images/login.png" alt="Login CorpIA" width="90%">
 </p>
 
 ---
 
 ## 📊 Panel de Control
 
+<!-- Panel -->
 <p align="center">
-  <img src="./panel de control.png" alt="Dashboard CorpIA" width="90%">
+  <img src="./docs/images/panel de control.png" alt="Panel de Control CorpIA" width="90%">
 </p>
+
 
 ---
 
 ## 📂 Gestión de Documentos
 
+<!-- Documentos -->
 <p align="center">
-  <img src="./documentos.png" alt="Documentos CorpIA" width="90%">
+  <img src="./docs/images/documentos.png" alt="Documentos CorpIA" width="90%">
 </p>
 
 ---
 
 ## 💬 Chat Inteligente
 
+<!-- Chat -->
 <p align="center">
-  <img src="./chat.png" alt="Chat IA CorpIA" width="90%">
+  <img src="./docs/images/chat.png" alt="Chat IA CorpIA" width="90%">
 </p>
 
 ---
