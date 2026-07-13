@@ -1,280 +1,127 @@
-<div align="center">
+# 🚀 CorpIA — Plataforma Inteligente de Gestión Documental con IA
 
-# 🚀 CorpIA
+<p align="center">
+  <img src="./banner.png" alt="Banner CorpIA" width="100%">
+</p>
 
-### Enterprise AI Knowledge Assistant
+<p align="center">
+  <strong>CorpIA</strong> es una plataforma inteligente impulsada por IA diseñada para facilitar la gestión, análisis y consulta de información empresarial mediante una API moderna y una interfaz intuitiva.
+</p>
 
-**An enterprise-grade AI platform built with FastAPI, Docker and Retrieval-Augmented Generation (RAG).**
+<p align="center">
+  <img src="./logocorpia.png" alt="Logo CorpIA" width="180">
+</p>
 
-<p>
+---
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite)
-![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge)
-![Swagger](https://img.shields.io/badge/OpenAPI-Swagger-85EA2D?style=for-the-badge&logo=swagger)
+## ✨ Identidad Visual
+
+CorpIA cuenta con una identidad visual enfocada en:
+
+* 🤖 Inteligencia Artificial aplicada a procesos empresariales.
+* 📂 Gestión inteligente de documentos.
+* 🔐 Acceso seguro mediante autenticación.
+* 📊 Visualización clara de información.
+* ⚡ Arquitectura moderna preparada para escalar.
+
+---
+
+# 🏗️ Arquitectura del Sistema
+
+<p align="center">
+  <img src="./arquitectura.png" alt="Arquitectura CorpIA" width="100%">
+</p>
+
+La arquitectura de CorpIA está diseñada bajo una estructura modular:
+
+* 🖥️ **Frontend:** Interfaz de usuario para interacción con la plataforma.
+* ⚙️ **Backend API:** Servicios inteligentes para procesamiento de solicitudes.
+* 🧠 **Módulos IA:** Análisis y procesamiento de información.
+* 🗄️ **Base de datos:** Almacenamiento estructurado de información.
+* ☁️ **Cloud Deployment:** Preparado para ambientes productivos.
+
+---
+
+# 🎬 Demo del funcionamiento
+
+<p align="center">
+  <img src="./demo.gif" alt="Demo CorpIA" width="100%">
+</p>
+
+El GIF muestra el flujo principal de la plataforma:
+
+1. Inicio de sesión.
+2. Acceso al panel de control.
+3. Gestión de documentos.
+4. Interacción con la inteligencia artificial.
+5. Respuesta del sistema.
+
+---
+
+# 📸 Capturas del Proyecto
+
+## 🔐 Login
+
+<p align="center">
+  <img src="./login.png" alt="Login CorpIA" width="90%">
+</p>
+
+---
+
+## 📊 Panel de Control
+
+<p align="center">
+  <img src="./panel de control.png" alt="Dashboard CorpIA" width="90%">
+</p>
+
+---
+
+## 📂 Gestión de Documentos
+
+<p align="center">
+  <img src="./documentos.png" alt="Documentos CorpIA" width="90%">
+</p>
+
+---
+
+## 💬 Chat Inteligente
+
+<p align="center">
+  <img src="./chat.png" alt="Chat IA CorpIA" width="90%">
+</p>
+
+---
+
+# 📈 Estado del Proyecto
+
+<p align="center">
+
+![Status](https://img.shields.io/badge/status-en%20desarrollo-success)
+![AI](https://img.shields.io/badge/AI-Powered-blue)
+![API](https://img.shields.io/badge/API-REST-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 </p>
 
 ---
 
-### 🌐 Live API
+# 🌟 Próximas mejoras
 
-**Production**
-
-https://corpia.onrender.com
-
-### 📖 Swagger Documentation
-
-https://corpia.onrender.com/docs
-
-### ❤️ Health Check
-
-https://corpia.onrender.com/health
-
-</div>
+* [ ] Integración completa del frontend React.
+* [ ] Migración de SQLite a PostgreSQL.
+* [ ] Implementación de almacenamiento documental avanzado.
+* [ ] Mejoras del modelo de IA.
+* [ ] Sistema de usuarios y roles empresariales.
+* [ ] Monitoreo y métricas del sistema.
 
 ---
 
-# 📖 Overview
+# 🧠 Filosofía CorpIA
 
-CorpIA is an enterprise-ready AI backend designed to centralize document management, Retrieval-Augmented Generation (RAG), AI model administration, authentication, and knowledge search through a modern REST API.
+> "Transformar información empresarial en conocimiento inteligente."
 
-It was built following production-oriented practices including Docker containerization, automatic deployment, JWT authentication, modular architecture and interactive API documentation.
+CorpIA representa la unión entre tecnología, automatización e inteligencia artificial para crear herramientas capaces de ayudar a las organizaciones a tomar mejores decisiones.
 
----
-
-# ✨ Features
-
-- 🔐 JWT Authentication
-- 🤖 AI Model Management
-- 📄 Intelligent Document Upload
-- 📚 Retrieval-Augmented Generation (RAG)
-- 💬 AI Chat API
-- 👥 User Administration
-- ⚙️ System Configuration
-- 📊 Dashboard Metrics
-- 📁 File Management
-- 📖 Automatic Swagger Documentation
-- 🐳 Docker Ready
-- ☁️ Cloud Deployment
-
----
-
-# 🏗 Architecture
-
-```text
-                   ┌──────────────────────┐
-                   │      Frontend        │
-                   │ React / Vue / Next   │
-                   └──────────┬───────────┘
-                              │ REST API
-                              ▼
-                   ┌──────────────────────┐
-                   │      FastAPI         │
-                   │       CorpIA         │
-                   └──────────┬───────────┘
-                              │
-        ┌─────────────────────┼────────────────────┐
-        ▼                     ▼                    ▼
- Authentication          Document RAG         AI Models
-        │                     │                    │
-        └───────────────Database───────────────────┘
-```
-
----
-
-# 📂 Project Structure
-
-```text
-CorpIA/
-
-├── backend
-│   ├── app
-│   │   ├── api
-│   │   ├── core
-│   │   ├── db
-│   │   ├── rag
-│   │   ├── schemas
-│   │   └── services
-│   │
-│   ├── data
-│   ├── Dockerfile
-│   ├── main.py
-│   └── requirements.txt
-│
-├── frontend
-│
-├── docs
-│
-├── qa
-│
-└── docker-compose.yml
-```
-
----
-
-# 🚀 API Modules
-
-| Module | Description |
-|---------|-------------|
-| Authentication | JWT Login & Security |
-| Chat | AI Conversations |
-| Documents | Upload, Preview & Delete |
-| Models | AI Model Administration |
-| Users | User Management |
-| Dashboard | Metrics |
-| Settings | Configuration |
-| System | Server Information |
-
----
-
-# 🧠 Technologies
-
-| Backend | DevOps | AI |
-|----------|---------|----|
-| Python | Docker | RAG |
-| FastAPI | Render | LLM Ready |
-| SQLAlchemy | GitHub | Embeddings |
-| Pydantic | Swagger | Vector Search |
-| SQLite | Docker Compose | ChromaDB |
-
----
-
-# 🔌 REST Endpoints
-
-| Method | Endpoint |
-|----------|-----------|
-| GET | / |
-| GET | /health |
-| POST | /api/auth/login |
-| POST | /api/chat |
-| POST | /api/documents/upload |
-| GET | /api/models |
-| GET | /api/users |
-| GET | /api/dashboard |
-
-See the complete documentation in Swagger:
-
-https://corpia.onrender.com/docs
-
----
-
-# 🐳 Docker
-
-Build
-
-```bash
-docker build -t corpia .
-```
-
-Run
-
-```bash
-docker run -p 8000:8000 corpia
-```
-
----
-
-# ⚙ Local Installation
-
-Clone repository
-
-```bash
-git clone https://github.com/IselaDataMaven/CorpIA.git
-```
-
-Enter project
-
-```bash
-cd CorpIA/backend
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run
-
-```bash
-uvicorn main:app --reload
-```
-
-Open
-
-```
-http://localhost:8000/docs
-```
-
----
-
-# ☁ Deployment
-
-The backend is containerized with Docker and automatically deployed using Render.
-
-Production URL
-
-```
-https://corpia.onrender.com
-```
-
----
-
-# 📸 Screenshots
-
-## Swagger UI
-
-> Add a screenshot of the deployed API documentation.
-
-## Dashboard
-
-> Add future frontend screenshots.
-
----
-
-# 🔮 Roadmap
-
-- [x] FastAPI Backend
-- [x] Docker
-- [x] JWT Authentication
-- [x] Document Management
-- [x] RAG Integration
-- [x] Swagger Documentation
-- [x] Cloud Deployment
-- [ ] React Frontend
-- [ ] PostgreSQL
-- [ ] Redis Cache
-- [ ] Kubernetes
-- [ ] CI/CD Pipeline
-- [ ] Multi-model AI Support
-
----
-
-# 🤝 Contributing
-
-Contributions, issues and feature requests are welcome.
-
-Feel free to fork this project and submit a Pull Request.
-
----
-
-# 👩‍💻 Author
-
-**IselaDataMaven**
-
-GitHub
-
-https://github.com/IselaDataMaven
-
----
-
-<div align="center">
-
-### ⭐ If you found this project useful, consider giving it a Star.
-
-Built with ❤️ using FastAPI, Docker and Artificial Intelligence.
-
-</div>
+<p align="center">
+  <img src="./logocorpia.png" alt="CorpIA Logo" width="120">
+</p>
