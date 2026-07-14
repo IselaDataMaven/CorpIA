@@ -17,8 +17,8 @@
 
 ---
 <!--Demo-->
-<img src="./docs/images/" alt="Demo CorpIA<img width="1604" height="835" alt="demo" src="https://github.com/user-attachments/assets/4ad20752-be28-4270-95a1-2f051d328318" />
-">
+<img width="1604" height="835" alt="demo" src="https://github.com/user-attachments/assets/4bb9c829-3e24-4a08-bcfa-15e4cefdf4a0" />
+
 ---
 
 ## ✨ Identidad Visual
