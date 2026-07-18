@@ -56,21 +56,6 @@ app.include_router(dashboard.router)
 app.include_router(system.router)
 
 
-from fastapi.responses import FileResponse
-from pathlib import Path
-
-FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend" / "dist"
-
-app.mount(
-    "/assets",
-    StaticFiles(directory=FRONTEND_DIR / "assets"),
-    name="assets",
-)
-
-@app.get("/", include_in_schema=False)
-async def serve_frontend():
-    return FileResponse(FRONTEND_DIR / "index.html")
-
 
 @app.get("/health", tags=["Health"])
 def health_check():
