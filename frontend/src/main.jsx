@@ -13,15 +13,15 @@ import { ToastProvider } from "./context/ToastContext";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Suspense fallback={null}>
-      <ThemeProvider>
-        <ToastProvider>
-          <AuthProvider>
-            <BrowserRouter>
+      <BrowserRouter>
+        <AuthProvider>
+          <ThemeProvider>
+            <ToastProvider>
               <App />
-            </BrowserRouter>
-          </AuthProvider>
-        </ToastProvider>
-      </ThemeProvider>
+            </ToastProvider>
+          </ThemeProvider>
+        </AuthProvider>
+      </BrowserRouter>
     </Suspense>
-  </StrictMode>
+  </StrictMode>,
 );
