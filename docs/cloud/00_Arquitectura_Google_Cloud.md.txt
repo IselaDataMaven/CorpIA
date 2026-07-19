@@ -1,0 +1,40 @@
+# 🏰 Arquitectura de CorpIA en Google Cloud
+
+> "Toda gran arquitectura comienza con una decisión, no con un botón."
+
+---
+
+# Objetivo
+
+Construir una plataforma de IA empresarial utilizando Google Cloud siguiendo principios de arquitectura, seguridad, escalabilidad y automatización.
+
+---
+
+# Proyecto
+
+**Nombre:** corpia-ai-dev
+
+**Proveedor:** Google Cloud Platform
+
+**Organización:** isela-lopez-garcia-ing-org
+
+---
+
+# Estado del proyecto
+
+## Día 1
+
+- ✅ Repositorio clonado desde GitHub.
+- ✅ Proyecto creado en Google Cloud.
+- ✅ Inicio de la documentación de arquitectura.
+
+---
+
+# Próximos pasos
+
+- Configurar IAM.
+- Habilitar APIs.
+- Crear Artifact Registry.
+- Desplegar Cloud Run.
+- Configurar CI/CD.
+- Integrar Vertex AI.
